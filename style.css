@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/******Barra de navegação****/
+#campo-pesquisa{
+    /*border: 1px solid #000;*/
+    margin-left: auto;
+}
+
+#links{
+    /*border: 1px solid #000;*/
+    margin-left: auto;
+}
+
+nav ul li a{
+    /*border: 1px solid #000;*/
+    text-decoration: none;
+    color: #000;
+    margin-left: 25px;
+}
+
+/******Sobre*********/
+video {
+    width: 100%;
+    max-height: 100%;
+}
+
+/******Artigos******/
+#artigos{
+    /*border: 1px solid #000;*/
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 15px;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+}
+
+.artigo{
+    /*border: 1px solid #000;*/
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.titulo-artigos{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alinhamento{
+    text-align: justify;
+    font-size: 14pt;
+}
+
+.cards-artigos{
+    /*margin-left: 1rem;
+    margin-right: 1rem;*/
+    box-shadow: 7px 7px 25px;
+}
+
+/*********Vídeos*********/
+.titulos{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#titulo-artigo{
+    margin-bottom: 30px;
+}
+
+h3{
+    text-align: center;
+}
+
+.video{
+    margin-left: 60px;
+    /*border: 1px solid #000;*/
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+/***Rodapé***/
+footer{
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-image: url(img/Footer.png);
+    color:  #5d6d7e;
+}
+
+#insta-link{
+    text-decoration: none;
+    color: #000;
+    font-weight:600;
+    font-size: 12pt;
+    color:  #5d6d7e;
+}
+
+.contato{
+    /*border: 1px solid #000;*/
+    margin-top: 1rem;
+}
+
+#direitos{
+    color: #000;
+    font-weight:700;
+    font-size: 16pt;
+    color:  #5d6d7e;
+}
+
+#atualizacao{
+    color: #000;
+    font-weight:700;
+    font-size: 14pt;
+    /*border: 1px solid #000;*/
+    margin-left: 10px;
+    color:  #5d6d7e;
+}

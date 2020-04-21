@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNoDay</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Barra de navegação-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/logo_teste.png" alt="logo TechNoDay" width="50" height="50">
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-dark"></span>        
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav" id="links">
+            <li class="nav-item">
+                <a href="index.html#artigo" class="nav-link">Artigos</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#videos" class="nav-link">Vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#contato" class="nav-link">Contatos</a>
+            </li>            
+        </ul>
+        </div>
+    </nav>
+    <!--Termina seção barra de navegação-->
+    <!--Artigo 3 - Khan Academy-->
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron bg-light text-dark" id="artigos">
+                <h1 class="titulo-artigos">Khan Academy</h1>
+                <p class="alinhamento">Blz pessoal?</p>
+                <p> Aqui estou eu novamente e dessa vez com uma dica boa para quem está desesperado nessa quarentena sem saber o que fazer com os estudos,
+                    se encaixou nesse perfil? vem comigo...
+                </p>
+                <hr>
+                <button data-toggle="collapse" data-target="#lermais3" class="btn btn-primary btn-sm">Ler mais</button>
+                <a  href="Artigos/Vídeo  Khan Academy.pdf" download class="btn btn-link">Download</a>
+                    <div id="lermais3" class="collapse">
+                        <br>
+                        <p class="alinhamento">
+                            Devido a esse momento delicado em que estamos vivendo, em meio a uma pandemia que está rolando, muitas pessoas foram obrigadas a ver sua rotina e sua vidas tomando outro rumo, sendo mudadas. Fato é que com pandemia ou sem a rotina de trabalho ou estudos não pode deixar de ser executada.
+                        </p>
+                        <p class="alinhamento">
+                            A dica de ouro de hoje é sobre um app/ferramenta de estudo chamado Khan Academy. Vocês já ouviram falar?
+                        </p>
+                        <p class="alinhamento">
+                            O khan academy é um app disponível para Android e IOS e também conta com a versão WEB, se trata de uma ferramenta de estudo gratuita com o propósito de levar uma educação de qualidade em qualquer lugar a custo zero.
+                        </p>
+                        <p class="alinhamento">
+                            A plataforma oferece conteúdo e espaço tanto para alunos, pais e professores. Ela conta com matérias essenciais como português, matemática, biologia entre outras, começando desde o primário até matérias complexas de nível superior como matemática avançada.                            
+                        </p>
+                        <p class="alinhamento">
+                            A ferramenta utiliza em sua metodologia vídeos-aulas, textos, artigos e como todo método de avaliação tem provas, questionários e teste diversos.
+                        </p>
+                        <p class="alinhamento">
+                            Pra você que além de estudar quer aprender outro idioma ao mesmo tempo a plataforma tem versões em mais de 40 idiomas, sendo assim se você quer estudar o que estuda normalmente (seus estudos/materias) em inglês por exemplo, fique tranquilo.
+                        </p>
+                        <p class="alinhamento">
+                            Professores podem acompanhar o andamento dos alunos com os relatórios disponibilizados na plataforma, bem como quantas tentativas e respostas os alunos realizaram.
+                        </p>
+                        <p class="alinhamento">
+                            Enfim temos inúmeras ferramentas dentro da plataforma de estudos, pegaram a dica? sensacional né pessoal, bom fico por aqui e aguarde que breve tem novidade para vocês.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--Termina seção artigo 3-->
+    <!--Contato-->
+    <footer id="contato">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/logo-footer.png" alt="logo" width="55" height="55">
+                <span id="atualizacao">@TechNoDay2020</span>
+            </div>
+            <div class="col-6 contato">
+                <h1 id="titulo-footer">TechNoDay</h1>
+                <br>
+                <a href="https://www.instagram.com/_technoday/" class="nav-link">
+                    <img src="img/instagram5.svg" alt="instagram" width="25" height="25">
+                    <span id="insta-link">@_technoday</span>
+                </a>
+                <a href="mailto:matheusvmg@outlook.com?" class="nav-link">
+                    <img src="img/outlook.svg" alt="email" width="25" height="25">
+                    <span id="insta-link">matheusvmg@outlook.com</span>
+                </a>
+                <br>
+                <span id="direitos">Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+    <!--Termina seção contato-->
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="controle.js"></script>
+</body>
+</html>

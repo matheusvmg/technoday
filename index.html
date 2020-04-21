@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNoDay</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Barra de navegação-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/logo_teste.png" alt="logo TechNoDay" width="50" height="50">
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-dark"></span>        
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav" id="links">
+            <li class="nav-item">
+                <a href="#artigo" class="nav-link">Artigos</a>
+            </li>
+            <li class="nav-item">
+                <a href="#videos" class="nav-link">Vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a href="#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contato" class="nav-link">Contatos</a>
+            </li>            
+        </ul>
+        </div>
+    </nav>
+    <!--Termina seção barra de navegação-->
+    <!--Sobre-->
+    <div class="row" id="sobre">
+        <div class="col">
+            <video width="1366" height="720" autoplay loop muted preload="auto">
+                <source src="img/Presentation.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <!--Termina seção sobre-->
+    <!--Seção artigos-->
+    <div class="row" id="artigo">
+        <div class="col titulos">
+            <h1 id="titulo-artigo">Artigos Destaques</h1>
+        </div>
+    </div>
+    <div class="card-deck">
+            <div class="card cards-artigos">
+                    <img src="img/Card instagram.png" alt="teste" width="480" height="250" class="card-img-top">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h1 class="titulo-artigos">Relação do tempo gasto no Instagram x Produtividade</h1>
+                    </div>
+                    <div class="card-text">
+                        <p class="alinhamento">Já parou para pensar quanto tempo você gasta no Instagram no seu dia?
+                            Fato é que o uso do celular já faz parte do nosso cotidiano e que realmente precisamos do mesmo para trabalho, comunicação com os amigos e muito mais...</p>
+                    </div>
+                    <a href="artigo1.html" class="btn btn-primary">Ler mais</a>
+                    <a  href="Artigos/Vídeo Tempo no Instagram X Produtividade no dia_marca d'água.pdf" download class="btn btn-link">Download</a>
+                </div>
+            </div>
+            <div class="card cards-artigos">
+                    <img src="img/TechNoDay.png" alt="teste" width="480" height="250" class="card-img-top">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h1 class="titulo-artigos">Canal IGTV TechNoDay</h1>
+                    </div>
+                    <div class="card-text">
+                        <p class="alinhamento">Eu sou Matheus sou criador do canal IGTV no instagram e criador do blog TechNoDay...</p>
+                    </div>
+                    <a href="artigo2.html" class="btn btn-primary">Ler mais</a>
+                    <a  href="Artigos/Sobre o canal.pdf" download class="btn btn-link">Download</a>
+                </div>
+            </div>
+            <div class="card cards-artigos">
+                    <img src="img/Card khan academy.png" alt="teste" width="480" height="250" class="card-img-top">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h1 class="titulo-artigos">Khan Academy</h1>
+                    </div>
+                    <div class="card-text">
+                        <p class="alinhamento">Blz pessoal?</p>
+                        <p class="alinhamento">Aqui estou eu novamente e dessa vez com uma dica boa para quem está desesperado nessa quarentena sem saber o que fazer com os estudos,
+                            se encaixou nesse perfil? vem comigo...</p>
+                    </div>
+                    <a href="artigo3.html" class="btn btn-primary">Ler mais</a>
+                    <a  href="Artigos/Vídeo  Khan Academy.pdf" download class="btn btn-link">Download</a>
+                </div>
+            </div>
+    </div>
+    <!--Termina a seção de artigos-->
+    <!--Vídeos-->
+    <div class="row" id="videos">
+        <div class="col titulos">
+            <h1>Vídeos TechNoDay</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5 video">
+            <video controls width="600" height="500">
+                <source src="videos/videoAberturaCanal.mp4">
+            </video>
+            <figcaption>
+                <h3>Vídeo Abertura do canal IGTV</h3>
+                <p>Vídeo de abertura do canal IGTV na plataforma do instagram, o vídeo coloca a parte sobre o que é o canal, sobre os quadros que temos e muito mais.</p>
+            </figcaption>
+        </div>
+        <div class="col-5 video">
+            <video controls width="600" height="500">
+                <source src="videos/notificacoes.mp4">
+            </video>
+            <figcaption>
+                <h3>Vídeo Abertura do canal IGTV - continuação</h3>
+                <p>Vídeo de abertura do canal IGTV na plataforma do instagram, o vídeo coloca a parte sobre o que é o canal, sobre os quadros que temos e muito mais.</p>
+            </figcaption>
+        </div>
+    </div>
+    <!--Termina seção videos-->
+    <!--Contato-->
+    <footer id="contato">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/logo-footer.png" alt="logo" width="55" height="55">
+                <span id="atualizacao">@TechNoDay2020</span>
+            </div>
+            <div class="col-6 contato">
+                <h1 id="titulo-footer">TechNoDay</h1>
+                <br>
+                <a href="https://www.instagram.com/_technoday/" class="nav-link">
+                    <img src="img/instagram5.svg" alt="instagram" width="25" height="25">
+                    <span id="insta-link">@_technoday</span>
+                </a>
+                <a href="mailto:matheusvmg@outlook.com?" class="nav-link">
+                    <img src="img/outlook.svg" alt="email" width="25" height="25">
+                    <span id="insta-link">matheusvmg@outlook.com</span>
+                </a>
+                <br>
+                <span id="direitos">Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+    <!--Termina seção contato-->
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="controle.js"></script>
+</body>
+</html>
