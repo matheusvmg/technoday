@@ -27,5 +27,6 @@ Uma das principais metas é poder contribuir com a comunidade, ajudar de verdade
 ![Badge](https://img.shields.io/static/v1?label=javascript&message=programminglanguage&color=yellow&style=for-the-badge&logo=JAVASCRIPT)
  
  
+ <br />
  
- Desenvolvido por `Matheus Vinícius`
+ ## Desenvolvido por `Matheus Vinícius`
