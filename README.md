@@ -16,6 +16,16 @@ Uma das principais metas é poder contribuir com a comunidade, ajudar de verdade
   <h4 align="center">:diamonds:Comunidade</h4>
   
 # Tecnologias utilizadas:
+![Badge](https://img.shields.io/static/v1?label=html5&message=markckuplanguage&color=orange&style=for-the-badge&logo=HTML5)
 
+
+&nbsp;
+![Badge](https://img.shields.io/static/v1?label=css3&message=stylesheetlanguage&color=lightblue&style=for-the-badge&logo=CSS3)
+
+
+&nbsp;
+![Badge](https://img.shields.io/static/v1?label=javascript&message=programminglanguage&color=yellow&style=for-the-badge&logo=JAVASCRIPT)
+ 
+ 
  
  Desenvolvido por `Matheus Vinícius`
