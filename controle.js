@@ -6,3 +6,7 @@ function search(){
         alert('pesquisa não encontrada!!!');
     }
 }
+
+window.onload = () => {
+    document.querySelector('.email').value = ''
+}
