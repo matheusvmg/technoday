@@ -52,6 +52,14 @@ video {
     border-radius: 10px 10px 0px 0px;
 }
 
+.list{
+    margin: 20px 40px;
+}
+
+.list li{
+    margin: 5px 0px;
+}
+
 /*********Vídeos*********/
 .titulos{
     text-align: center;
