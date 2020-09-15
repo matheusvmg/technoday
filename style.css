@@ -163,6 +163,12 @@ form{
     margin-left: 10px;
 }
 
+/*images*/
+.img{
+    width: 90vw;
+}
+
+/*medias queries*/
 @media (max-width: 425px){
     .email{
         width: 90%;

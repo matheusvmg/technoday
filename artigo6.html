@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNoDay</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Barra de navegação-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/logo_teste.png" alt="logo TechNoDay" width="50" height="50">
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"  data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-dark"></span>        
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav" id="links">
+            <li class="nav-item">
+                <a href="index.html#artigo" class="nav-link">Artigos</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#videos" class="nav-link">Vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html#contato" class="nav-link">Contatos</a>
+            </li>            
+        </ul>
+        </div>
+    </nav>
+    <!--Termina seção barra de navegação-->
+    <!--Artigo 3 - Khan Academy-->
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron bg-light text-dark" id="artigos">
+                <h1 class="titulo-artigos"><strong>GIT E GITHUB</strong></h1>
+                <h5>Entenda de uma vez por todas o que é e como funciona essas duas ferramentas.</h5>
+                <br>
+                <p>Muita gente, mas muita gente mesmo, se pega confundindo os termos GIT e GITHUB, mas fique tranquilos que vamos explicar esses conceitos de uma vez por todas, tenho certeza que após você ler esse artigo conseguirá distinguir as duas ferramentas e utilizá-las da melhor forma possível.
+                </p>
+                <hr>
+                <!--<button data-toggle="collapse" data-target="#lermais3" class="btn btn-primary btn-sm">Ler mais</button>
+                <a  href="Artigos/Vídeo  Khan Academy.pdf" download class="btn btn-link">Download</a>-->
+                    <div>
+                        <br>
+                        <h5>GIT</h5>
+                        <br>
+                        <h5>CONCEITO</h5>
+                        <br>
+                        <p class="alinhamento">
+                            O GIT é um sistema de controle de versão de código desenvolvido tanto para lidar com projetos pequenos, quanto projetos maiores, mas para você realmente entender o que é o GIT vamos ao nosso exemplo: imagine que você faz parte de um time de desenvolvimento, cuja função é desenvolver um sistema de gerenciamento. Em uma equipe de desenvolvimento temos diversos tipos de profissionais que desempenham funções distintas, quando estamos trabalhando com código cada programador realiza modificações em certas partes do código fonte do sistema, logo como fazemos para juntar cada modificação que cada desenvolvedor realizou no código? Como modificamos uma parte do sistema sem alterar a versão em produção? Pegamos um pen drive e colocamos o código e passamos para o colega do lado? NÃO... é aqui que chegamos ao conceito de versionamento de código, essa ferramenta permite que o desenvolvimento seja como uma linha no tempo, onde temos linhas do tempo (branch) e diversos pontos na história ( modificações, commits ) , sendo a linha do tempo principal (master) o projeto na versão final e as outras linhas do tempo paralelas são modificações que os desenvolvedores do time realizaram. O GIT ajuda você a ter mais controle do projeto, permite que visualize modificações específicas em um determinado ponto na história, permite que você volte em um ponto específico e entre outras funcionalidades, agregando não somente para o desenvolvimento, mas também para o time.
+                        </p>
+                        <br>
+                        <h5>INSTALANDO O GIT NO SEU COMPUTADOR</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Como esse é um artigo que tem o objetivo de levar você a entender o GIT e GITHUB, vamos ao uma abordagem mais prática.
+                        </p>
+                        <ul class="list">
+                            <li>
+                                Entre nesse link <a href="https://git-scm.com/downloads">Download GIT</a> e baixe a versão para o seu sistema operacional.
+                            </li>
+                            <li>
+                                Depois de baixado e instalado verifique com o comando <strong>git --version</strong> no seu terminal( cmd ou terminal).
+                            </li>
+                            <li>
+                                Caso apareça a versão do GIT, ele foi instalado com sucesso na sua máquina.
+                            </li>
+                        </ul>
+                        <img src="img/git.png" class="img">
+                        <br>
+                        <br>
+                        <h5>INICIALIZANDO UM REPOSITÓRIO LOCAL COM O GIT</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Para que o GIT consiga monitorar as alterações do nosso projeto precisamos primeiramente inicializar um repositório GIT no local do nosso projeto. OBS: “repositório” é um diretório qualquer, ou seja uma pasta onde o GIT mantém todos os arquivos necessários para o controle de versão.
+                        </p>
+                        <p class="alinhamento">
+                            Para inicializar um repositório local com o GIT:
+                        </p>
+                        <ul class="list">
+                            <li>
+                                Entre na pasta onde o projeto se encontra e na raiz da pasta do projeto abra o terminal.
+                            </li>
+                            <li>
+                                Digite o comando <strong>git init</strong> no terminal para inicializar um repositório local no diretório do seu projeto.
+                            </li>
+                            <li>
+                                Se tudo der certo o GIT retornará uma mensagem <strong>Initialized empty Git repository in e “aqui caminho completo do diretório</strong>. Agora o GIT iniciou um repositório onde vai conseguir manter todo o versionamento do nosso projeto.
+                            </li>
+                        </ul>
+                        <br>
+                        <h5>VERIFICANDO O STATUS ATUAL DO PROJETO COM O GIT</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Na ferramenta GIT existe um comando que permite que ele verifique, em todo o seu projeto, se existe alguma modificação ou se algum novo arquivo foi adicionado ou deletado. É muito importante pois você consegue visualmente ter o controle do projeto. Para realizar esse procedimento utilize o comando “git status” no terminal. Onde a ferramenta te mostra na branch onde você se encontra e quais são os arquivos a receber o commit (modificados, adicionados ao staged).
+                        </p>
+                        <br>
+                        <h5>PERMITINDO QUE O GIT MONITORE AS MODIFICAÇÕES DO PROJETO</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Essa é uma das principais etapas, pois através dela que o GIT vai conseguir observar sempre que um arquivo ou funcionalidade é modificada no nosso projeto, dizendo para nós quais arquivos e onde eles foram modificados. O GIT só consegue observar as modificações depois que elas são adicionadas a um estado chamado de staged, basicamente o git registra o estado atual de todo o conteúdo do projeto e verifica se existem modificações baseado no último commit, se existe modificações nós precisamos adicioná-las ao staged, uma área que prepara todas essas modificações para o commit, com o comando <strong>git add nome-do-arquivo</strong> adicionando um arquivo específico ou <strong>git add .</strong>. Para adicionar todas as modificações de uma  só vez, o GIT assim que esses arquivos são adicionados registra o novo estado e consegue verificar se existe modificações ou não no projeto.
+                        </p>
+                        <br>
+                        <h5>REALIZANDO COMMITS DAS ALTERAÇÕES</h5>
+                        <br>
+                        <p class="alinhamento">
+                            O próximo passo depois de ter adicionado os arquivos criados ou modificados ao staged é fazer o commit. Imagine o commit como se fosse uma caixa, onde o GIT guarda todas aquelas alterações que foram feitas e lacra essa caixa e adiciona como um ponto na história, já que estamos falando de linha do tempo, o ponto interessante é que o GIT te permite navegar entre esses pontos (commits) na sua linha do tempo (branches), o GIT te dá o super poder de voltar no tempo, e esse é o ponto central do sistema de versionamento. Fez alguma alteração, entretanto precisa voltar a versão anterior? O GIT permite que faça isso, pois temos a capacidade de adicionar  pontos na história (commits).
+                            Para realizar os commits das modificações basta utilizar o comando <strong>git commit -m “mensagem explicando o commit”</strong> no terminal. OBS: a flag <strong>-m</strong> do lado da palavra commit significa mensagem, é a mensagem que você vai passar explicando e detalhando aquele commit.
+                        </p>
+                        <br>
+                        <h5>CRIANDO LINHAS DO TEMPO PARALELAS</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Como foi dito anteriormente o GIT funciona como se fosse um linha do tempo, onde a principal é a master. OBS: quando falamos de linha do tempo estamos falando de branches ou ramos.
+                            O GIT permite criar quantas linhas do tempo forem necessárias, então vamos partir para mais um exemplo para você entender melhor. Lembra do exemplo acima, do time de desenvolvimento? Então, como foi dito cada programador trabalha em uma parte específica do código fonte, quando um desenvolvedor tem que realizar um teste ou uma implementação de uma funcionalidade ele cria um branch, ou como estamos falando neste artigo uma linha do tempo paralela, onde essa linha do tempo herda todas as características da linha do tempo principal e a partir dela podem ser feitas modificações que só irão ter efeitos naquela linha do tempo (branch).
+                            O principal benefício é que você consegue modificar, deletar e inserir sem alterar a versão atual em produção (linha do tempo principal) e também sem ter qualquer contato com as modificações que seus colegas de time estão fazendo naquele momento.
+                            O comando para essa funcionalidade é o <strong>git branch nome-da-branch</strong> para criar uma nova branch e caso você queira criar uma nova branch e já se redirecionar para ela o comando é <strong>git checkout -b nome-da-branch</strong>, caso queira saber em qual branch você se encontra basta digitar o comando <strong>git branch</strong> que o git lista as branches disponíveis e mostra em destaque a que você se localiza. Vale ressaltar que, também temos o comando <strong>git switch nome-da-branch</strong> para ir de uma branch para outra, o GIT permite que você realize a função de diversas formas, todavia para facilitar a compreensão vamos nos ater aos principais comandos.
+                        </p>
+                        <br>
+                        <h5>JUNTANDO ALTERAÇÕES DA BRANCH DE DESENVOLVIMENTO COM A PRINCIPAL</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Um das funcionalidades mais interessantes do GIT é a possibilidade de juntar a linha do tempo paralela com a principal, ou seja, todas aquelas alterações que o desenvolvedor fez na branch de desenvolvimento, agora podem ser mescladas com o ramo principal. A tarefa é relativamente simples, basta você ir para a branch na qual quer que as alterações sejam mescladas e realizar o merge das alterações da outra branch. O comando próprio para essa tarefa é o <strong>git merge nome-da-branch</strong>. 
+                        </p>
+                        <br>
+                        <h5>GITHUB</h5>
+                        <br>
+                        <h5>CONCEITO</h5>
+                        <br>
+                        <p class="alinhamento">
+                            O GITHUB é uma plataforma que serve para a hospedagem de código-fonte, compartilhamento de informações, gerenciamento de projetos e usa o sistema de controle de versão GIT. Ele permite que desenvolvedores ao redor do mundo consigam contribuir tanto para projetos open-source, quanto para projetos privados.
+                        </p>
+                        <br>
+                        <h5>CADASTRO NA PLATAFORMA</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Para eu utilizar tenho que ser desenvolvedor? NÃO...qualquer pessoa do mundo pode criar uma conta gratuita e utilizar a ferramenta. É tão simples como qualquer outro cadastro, basta entrar nesse site: <a href="https://github.com/">GITHUB</a> e nos campos de cadastro digitar o nome de usuário, email e senha. Logo após confirme o email e pronto! Já pode fazer login e usar tudo o que o github pode oferecer.
+                        </p>
+                        <img src="img/github.png" class="img">
+                        <br>
+                        <br>
+                        <h5>CRIANDO UM REPOSITÓRIO NO GITHUB</h5>
+                        <br>
+                        <ul class="list">
+                            <li>
+                                Faça login na sua conta do github.
+                            </li>
+                            <li>
+                                Clique no botão de + no canto superior direito.
+                            </li>
+                            <li>
+                                Clique no ítem de menu novo repositório.
+                            </li>
+                            <li>
+                                Preencha o nome do repositório.
+                            </li>
+                            <li>
+                                A descrição do repositório é opcional, caso queira colocar.
+                            </li>
+                            <li>
+                                Marque se esse repositório será público ou privado.
+                            </li>
+                            <li>
+                                Se você for importar um repositório local não precisa marcar nenhuma das opções abaixo.
+                            </li>
+                        </ul>
+                        <p class="alinhamento">Ponto 2 e 3</p>
+                        <img src="img/github2.png" class="img">
+                        <br>
+                        <br>
+                        <p class="alinhamento">Ponto 4 em diante</p>
+                        <img src="img/github3.png" class="img">
+                        <br>
+                        <br>
+                        <h5>SUBINDO O PROJETO PARA O REPOSITÓRIO REMOTO</h5>
+                        <br>
+                        <p class="alinhamento">
+                            Aqui estamos na etapa final.    Quando o time de desenvolvimento já fez todas as alterações no projeto, validaram e juntaram todas as modificações, e agora falta enviar o projeto para o repositório remoto (servidor).
+                            Vale ressaltar que existem diversas opções de ferramentas e serviços para a hospedagem desse projeto, nesse artigo abordaremos o github.
+                            Existe duas maneiras de enviarmos os arquivos do nosso projeto para o servidor do github, a primeira é através da interface do github adicionando os arquivos arrastando para a interface ou abrindo pelo explorador de arquivos. A segunda é como iremos prosseguir nesse artigo, através da linha de comando.
+                        </p>
+                        <ul class="list">
+                            <li>
+                                Verifique o status do seu projeto com o comando “git status”.
+                            </li>
+                            <li>
+                                Se tem arquivos para serem adicionados, adicione-os com o <strong>git add nome-do-arquivo</strong> ou <strong>git add</strong>, para adicionar tudo.
+                            </li>
+                            <li>
+                                Comente os arquivos adicionados pelo comando <strong>git commit -m “mensagem explicando o commit aqui</strong>.
+                            </li>
+                            <li>
+                                Aponte para qual repositório remoto que você deseja enviar os arquivos do projeto com o comando <strong>git remote add origin url-do-repositório</strong>.
+                            </li>
+                            <li>
+                                Aponte quais branches você deseja enviar para o repositório remoto, no nosso caso só a master, pois é a linha do tempo principal, com o comando <strong>git branch -M master</strong>.
+                            </li>
+                            <li>
+                                Envie tudo para o servidor com o comando <strong>git push -u origin master</strong>.
+                            </li>
+                            <li>
+                                Configure o seu nome de usuário com o comando <strong>git config --global user.name “nome-do-usuário”</strong>.
+                            </li>
+                            <li>
+                                Configure o seu email com o comando <strong>git config --global user.email “email-cadastrado-no-github”</strong>.
+                            </li>
+                            <li>
+                                Caso peça, digite seu nome de usuário/email e senha e aperte enter.
+                            </li>
+                        </ul>
+                        <p class="alinhamento">
+                            Pronto! Agora é só atualizar a página lá no repositório do github que os arquivos do projeto estarão lá.
+                        </p>
+                        <p class="alinhamento">
+                            O <strong>GIT</strong> e o <strong>GITHUB</strong> são ferramentas fantásticas que se usadas em conjunto conseguem potencializar e muito o processo de desenvolvimento.
+                        </p>
+                        <p class="alinhamento">
+                            Gostou do artigo? Não esqueça de deixar seu feedback lá na nossa página do instagram @_technoday e compartilhar o artigo.
+                        </p>
+                        <a  href="Artigos/GIT E GITHUB.pdf" download class="btn btn-link">Download</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--Termina seção artigo 3-->
+    <!--Contato-->
+    <footer id="contato">
+        <div class="row">
+            <div class="col-lg-5">
+                <img src="img/logo-footer.png" alt="logo" width="55" height="55">
+                <span id="atualizacao">@TechNoDay2020</span>
+            </div>
+            <div class="col-lg-3 text-center contato">
+                <h1 id="titulo-footer">TechNoDay</h1>
+                <br>
+                <a href="https://www.instagram.com/_technoday/" target="_blank" class="nav-link">
+                    <img src="img/instagram5.svg" alt="instagram" width="25" height="25">
+                    <span id="insta-link">@_technoday</span>
+                </a>
+                <a href="mailto:matheusvmg@outlook.com?" class="nav-link">
+                    <img src="img/outlook.svg" alt="email" width="25" height="25">
+                    <span id="insta-link">matheusvmg@outlook.com</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UCEtvDgD-imAdwyLH3x6oIuw?view_as=subscriber" target="_blank" class="nav-link">
+                    <img src="img/icons8-play-button.svg" alt="youtube" width="25" height="25">
+                    <span id="insta-link">Matheus Góes</span>
+                </a>
+                <br>
+                <span id="direitos">Todos os direitos reservados</span>
+            </div>
+        </div>
+    </footer>
+    <!--Termina seção contato-->
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="controle.js"></script>
+</body>
+</html>
